@@ -4,11 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{page.title}} | {{site.name}}</title>
+    <title>About | Medusa</title>
 
-    {% seo %}
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>About | Medusa</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="About" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Medusa is a child theme of Mundana Theme built on Jekyll" />
+<meta property="og:description" content="Medusa is a child theme of Mundana Theme built on Jekyll" />
+<meta property="og:site_name" content="Medusa" />
+<script type="application/ld+json">
+{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"}},"url":"/about.html","headline":"About","description":"Medusa is a child theme of Mundana Theme built on Jekyll","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -17,13 +28,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/theme.css">
 
     <!-- Pygments Highlighting -->
-    <link href="{{site.baseurl}}/assets/css/pygments.css" rel="stylesheet">
+    <link href="/assets/css/pygments.css" rel="stylesheet">
 
     <!-- Own Fonts -->
 
@@ -43,24 +54,46 @@
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-    {% include tracking-header.html %}
+    <!-- This goes before </head> closing tag, Google Analytics can be placed here --> 
 
 
 </head>
 
-<body class="{% if page.url == "/" %} homefirstpage {% endif %}">
+<body class="">
 
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container">
             
-            <a class="navbar-brand" href="{{ site.baseurl }}/index.html" style="font-family: 'Lexend Deca', sans-serif;">
-                {{site.name}}
+            <a class="navbar-brand" href="/index.html" style="font-family: 'Lexend Deca', sans-serif;">
+                Medusa
             </a>
 
             <div class="navbar-collapse collapse" id="navbarColor01">
                 <ul class="navbar-nav ml-auto d-flex align-items-center" style="font-family: 'Lexend Deca', sans-serif;">
-                {% include menu-header.html %}
+                <!--  Replace menu links here -->
+
+<li class="nav-item">
+<a class="nav-link" href="/index.html">Posts</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/resume.pdf">Resume</a>
+</li>
+
+
+<!--
+
+<li class="nav-item">
+<a target="_blank" class="nav-link" href="https://www.wowthemes.net/donate/">Buy me a coffee<i class="fa fa-coffee text-danger"></i></a>
+</li>
+
+-->
+
                 </ul>
             </div>
 
@@ -74,7 +107,73 @@
 
     <!-- Content -->
     <main role="main" class="site-content">
-        {{ content }}
+        <div class="container" 
+style="height: 75vh; flex: 1;
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 0%;
+display: flex;"
+>
+
+    <div class="profile">
+
+        <div class="avatar">
+            <img src="assets/images/avatar.jpg">
+        </div>
+
+        <div style="margin: auto; padding: 10px; ">
+            <h2>
+                Jane Doe
+            </h2>
+        </div>
+
+        <div style="margin: auto; padding: 10px; ">
+            <p>
+                I prefer <b>journey</b> over destination, <b>tea</b> over coffee and <b>tabs</b> over spaces
+            </p>
+        </div>
+
+        <div class="social">            
+
+            <ul>
+                <li>
+                    <a href="https://github.com/fazledyn/">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.linkedin.com/in/fazledyn/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto: rabidahamed@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.instagram.com/fazledyn/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://dev.to/fazledyn/">
+                        <i class="fab fa-dev"></i>
+                    </a>
+                </li>
+
+                
+            </ul>
+        
+        </div>
+
+    </div>
+
+</div>
     </main>
 
 
@@ -83,7 +182,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="{{site.baseurl}}/assets/js/theme.js"></script>
+    <script src="/assets/js/theme.js"></script>
 
 
     <!-- Footer -->
@@ -106,7 +205,8 @@
         </div>
     </footer>
 
-    {% include tracking-footer.html %}
+    <!-- All this area goes before </body> closing tag --> 
+
 
 </body>
 
